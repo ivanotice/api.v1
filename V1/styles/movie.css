@@ -29,14 +29,14 @@ body {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 10px;
   color: #0F0101; /* Cambia el color del título */
   animation: fade-in 0.5s ease-in-out; /* Agrega una animación de entrada */
 }
 
 p {
-  font-size: 16px;
+  font-size: 19px;
   line-height: 1,5;
   color: #fff; /* Cambia el color del texto principal */
   animation: fade-in 0.5s ease-in-out; /* Agrega una animación de entrada */
