@@ -1,16 +1,38 @@
-$(document).ready(function(){
-      $('.carousel .slides').slick({
-        slidesToShow: 5, // Mostrar 4 películas a la vez
-        slidesToScroll: 1, // Desplazarse de una película a la vez
-        autoplay: true, // Activar reproducción automática
-        autoplaySpeed: 1000, // Intervalo de tiempo entre cada película (en milisegundos)
-        arrows: false, // Desactivar los botones de siguiente y anterior
-        draggable: true, // Permitir el desplazamiento manual
-        infinite: true // Reiniciar el carrusel automáticamente al llegar al final
-      });
+$(document).ready(function() {
+  $('.carousel .slides').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    arrows: false, // Desactivar los botones de siguiente y anterior
+    draggable: true,
+    infinite: true,
+    swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
+  });
 
-      $('.carousel .slides li img').on('click', function(){
-        // Agregar aquí la animación al hacer clic en una película
-        console.log('Has hecho clic en una película');
-      });
-    });
+  $('.carousel .slides').on('swipe', function(event, slick, direction) {
+    if (direction === 'left') {
+      $('.carousel .slides').slick('slickNext');
+    } else if (direction === 'right') {
+      $('.carousel .slides').slick('slickPrev');
+    }
+  });
+
+  $('.carousel .slides li img').on('click', function() {
+    console.log('Has hecho clic en una película');
+  });
+});
