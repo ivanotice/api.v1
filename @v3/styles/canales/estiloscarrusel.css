@@ -1,0 +1,28 @@
+.carousel {
+      width: 100%;
+      max-width: 800px; /* Ajusta el ancho según tus necesidades */
+      margin: 0 auto;
+    }
+
+    .carousel img {
+      width: 65px; /* Ajusta el tamaño de la imagen según tus necesidades */
+      height: auto;
+    }
+
+    .slick-slide {
+      margin: 17px; /* Ajusta la separación entre cada película según tus necesidades */
+    }
+
+    .slick-slide img {
+      cursor: pointer;
+    }
+
+    .slick-slide img:hover {
+      transform: scale(1.2); /* Ajusta la escala de la imagen al hacer hover según tus necesidades */
+    }
+
+    .carousel-title {
+      text-align: left;
+      font-size: 24px; /* Ajusta el tamaño de fuente del título según tus necesidades */
+      margin-bottom: 20px; /* Ajusta el margen inferior del título según tus necesidades */
+    }
