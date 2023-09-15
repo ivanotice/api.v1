@@ -49,9 +49,3 @@
     .listp-slide img:hover {
       transform: scale(1.2); /* Ajusta la escala de la imagen al hacer hover según tus necesidades */
     }
-
-    .popular-title {
-      text-align: left;
-      font-size: 24px; /* Ajusta el tamaño de fuente del título según tus necesidades */
-      margin-bottom: 20px; /* Ajusta el margen inferior del título según tus necesidades */
-    }
